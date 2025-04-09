@@ -2,18 +2,18 @@
   "users": [
     {
       "id": 1,
-      "name": "NEW_NAME",
-      "age": 9999
+      "name": "Anastasia",
+      "age": 100
     },
     {
-      "name": "new record",
+      "name": "Bob",
       "age": 0,
       "id": 2
     },
     {
-      "name": "new record",
+      "name": "Chris",
       "age": 0,
-      "id": 3
+      "id": 37
     }
   ]
 }
