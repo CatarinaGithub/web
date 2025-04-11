@@ -3,6 +3,8 @@ type Callback = () => void;
 export class Eventing {
   events: { [key: string]: Callback[] } = {};
 
+  // use always error funtions
+  // https://www.udemy.com/course/typescript-the-complete-developers-guide/learn/lecture/15066994#overview
   on = (eventName: string, callback: Callback): void => {
     const handlers = this.events[eventName] || [];
     handlers.push(callback);
@@ -16,7 +18,7 @@ export class Eventing {
       return;
     }
 
-    handlers.forEach(callback => {
+    handlers.forEach((callback) => {
       callback();
     });
   };
